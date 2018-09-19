@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friend or Foe</title>
+</head>
+
+<body>
+  <div class='container'>
+    Description:
+    Make a program that filters a list of strings and returns a list with only your friends name in it.
+    <br>
+    If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be
+    sure he's not...
+    <br>
+
+    Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+    <br>
+
+    Note: keep the original order of the names in the output.
+  </div>
+
+
+  <script>
+    // Solution
+    function friend(friends) {
+      //your code here
+      return friends.filter(n => n.length === 4);
+    }
+
+  </script>
+
+</body>
+
+</html>
