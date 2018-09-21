@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Invert Values</title>
+</head>
+
+<body>
+  <div class="container">
+    <p>Given a set of numbers, return the additive inverse of each. <br>Each positive becomes negatives, and the
+      negatives become positives.</p>
+    <br>
+    <a>invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]<br>
+      invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]<br>
+      invert([]) == []</a>
+  </div>
+
+
+  <script>
+    // My solution
+    // Create invert function that takes in parameters called array
+    // Create a for loop
+    // Use an if statement for skipping 0 using continue
+    // Else: Use array in loop and multiply it * -1 to convert all numbers to negative.
+    // Return the array
+
+    function invert(array) {
+      for (var i = 0; i < array.length; i++) {
+        if (array[i] === 0) {
+          continue;
+        } else {
+          array[i] = array[i] * -1;
+        }
+      }
+      return array;
+    }
+
+  </script>
+</body>
+
+</html>
