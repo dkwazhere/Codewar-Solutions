@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vowel Count Solution</title>
+</head>
+
+<body>
+  <div class="container">
+    <p> Return the number (count) of vowels in the given string. <br>
+
+      We will consider a, e, i, o, and u as vowels for this Kata. <br>
+
+      The input string will only consist of lower case letters and/or spaces.</p>
+
+
+
+  </div>
+
+
+  <script>
+    function getCount(str) {
+      var vowelsCount = 0;
+
+      // enter your majic here
+
+      // Turn input into string
+      var string = str.toString();
+
+      // Loop through the string
+      for (var i = 0; i <= string.length; i++) {
+        // If vowel is found, put into the vowel counts
+        if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+          vowelsCount = vowelsCount + 1;
+        }
+      }
+      return vowelsCount;
+    }
+
+    console.log(getCount("David Kim"));
+
+
+  </script>
+</body>
+
+</html>
